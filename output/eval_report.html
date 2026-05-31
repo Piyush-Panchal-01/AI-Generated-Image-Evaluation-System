@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Report</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+           background: #f8fafc; color: #1e293b; margin: 0; padding: 24px; }
+    .card { background: #fff; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.08);
+             padding: 24px; margin-bottom: 20px; }
+    h1 { font-size: 22px; margin: 0 0 4px; }
+    .meta { font-size: 13px; color: #64748b; margin-bottom: 20px; }
+    .verdict { border-radius: 10px; padding: 18px 24px; font-size: 18px; font-weight: 700;
+                text-align: center; letter-spacing: .3px;
+                background: #fee2e2; color: #b91c1c; margin-bottom: 20px; }
+    .stats { display: flex; gap: 16px; margin-bottom: 20px; }
+    .stat { flex: 1; background: #f1f5f9; border-radius: 8px; padding: 14px;
+             text-align: center; }
+    .stat-num { font-size: 28px; font-weight: 700; }
+    .stat-label { font-size: 12px; color: #64748b; margin-top: 2px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th { background: #f1f5f9; padding: 10px 16px; text-align: left;
+          font-size: 12px; color: #64748b; text-transform: uppercase; letter-spacing:.5px; }
+    .files { font-size: 13px; color: #475569; }
+    .files span { font-family: monospace; background: #f1f5f9;
+                   padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1> AI Design Eval Report</h1>
+    <p class="meta">Generated: 31 May 2026, 07:43 PM</p>
+    <p class="files">
+      JSON: <span>input/sample.json</span> &nbsp;|&nbsp; Image: <span>input/images.png</span>
+    </p>
+  </div>
+
+  <div class="verdict">❌  1 CHECK(S) FAILED — DESIGN REJECTED</div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-num" style="color:#1e293b;">10</div>
+      <div class="stat-label">Total Checks</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" style="color:#15803d;">9</div>
+      <div class="stat-label">Passed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" style="color:#b91c1c;">1</div>
+      <div class="stat-label">Failed</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num" style="color:#0969da;">90%</div>
+      <div class="stat-label">Score</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:38%">Check</th>
+          <th style="width:10%; text-align:center">Result</th>
+          <th>Detail</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            JSON file is valid
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            File parsed successfully.
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            Canvas dimensions found
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Canvas: 1080 × 1080 px  (area = 1,166,400 px²)
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            Exactly 1 name placeholder
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Found 1 name placeholder(s). Required: exactly 1.
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            Name placeholder area (5.00%–10.00%)
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Name box: 680×115 px → area ratio = 6.70%  (allowed: 5.00%–10.00%)
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            Exactly 1 circular photo placeholder
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Found 1 circular photo placeholder(s). Required: exactly 1.
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#0969da; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">JSON</span>
+            Photo placeholder area (25.00%–30.00%)
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Circle radius = 316 px → area = π×316² = 313,707 px²  → ratio = 26.90%  (allowed: 25.00%–30.00%)
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#8250df; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">Image</span>
+            Image file is valid
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Opened successfully. Size: 522 × 778 px, Mode: RGBA
+          </td>
+        </tr>
+
+        <tr style="background:#fff5f5; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#8250df; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">Image</span>
+            Image dimensions match JSON canvas
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#cf222e; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">❌ FAIL</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Image: 522×778  |  JSON canvas: 1080×1080
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#8250df; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">Image</span>
+            OCR text extraction (wording)
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Extracted 69 characters via OCR. Preview: "ay
+
+ufsa
+AES sh
+& qafafa wae
+aranitt sragisifer
+HR Qa-Mat AAA
+
+4
+
+¢
+j"
+          </td>
+        </tr>
+
+        <tr style="background:#f0fff4; border-bottom:1px solid #e5e7eb;">
+          <td style="padding:12px 16px; font-size:14px;">
+            <span style="background:#8250df; color:#fff; font-size:11px;
+              padding:2px 8px; border-radius:20px; margin-right:8px;">Image</span>
+            Circular placeholder detected in image (25–30%)
+          </td>
+          <td style="padding:12px 16px; text-align:center;">
+            <span style="background:#1a7f37; color:#fff; font-size:12px; font-weight:600;
+              padding:3px 10px; border-radius:4px;">✅ PASS</span>
+          </td>
+          <td style="padding:12px 16px; font-size:13px; color:#555; font-family:monospace;">
+            Circles found: centre (376,478) radius 106 → 8.69% ✗ | centre (279,391) radius 229 → 40.57% ✗ | centre (225,451) radius 224 → 38.81% ✗
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

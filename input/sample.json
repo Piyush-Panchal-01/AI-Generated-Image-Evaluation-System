@@ -1,0 +1,33 @@
+{
+  "canvas": {
+    "width": 1080,
+    "height": 1080
+  },
+  "placeholders": [
+    {
+      "type": "name_placeholder",
+      "shape": "rectangle",
+      "bounding_box": {
+        "x": 200,
+        "y": 820,
+        "width": 680,
+        "height": 115
+      },
+      "color": "#FFD700",
+      "font": "Poppins",
+      "language": "en"
+    },
+    {
+      "type": "photo_placeholder",
+      "shape": "circle",
+      "center": {
+        "x": 540,
+        "y": 430
+      },
+      "radius": 316,
+      "color": "#4A90E2"
+    }
+  ],
+  "template_id": "crafto_template_001",
+  "version": "1.0"
+}
